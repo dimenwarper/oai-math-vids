@@ -11,48 +11,48 @@ Forty narrated, 3Blue1Brown-style explainer videos, each about a result in [gith
 
 ## The videos
 
-| # | Video | Result (catalogue family) | Length | Closing card says |
+| # | Download | Result (catalogue family) | Length | Closing card says |
 |---|---|---|---|---|
-| 1 | `v01_quasi_rh.mp4` | The Quasi-Riemann Hypothesis (003) | 5:01 | formalized in Lean |
-| 2 | `v02_unique_games.mp4` | The Unique Games Conjecture (102) | 4:52 | formalized in Lean |
-| 3 | `v03_matrix_mult.mp4` | Matrix multiplication: ω ≤ 9/4 (107) | 4:39 | formalized in Lean |
-| 4 | `v04_plane_coloring.mp4` | The Plane Is Not 5-Colorable (158) | 3:42 | formalized in Lean |
-| 5 | `v05_erdos_ap.mp4` | Erdős's Reciprocal-Sum Conjecture (159) | 3:58 | formalized in Lean |
-| 6 | `v06_hilbert10_q.mp4` | Hilbert's Tenth Problem over ℚ (004) | 4:07 | not yet formalized |
-| 7 | `v07_hilbert16.mp4` | Hilbert's 16th Problem: Limit Cycles (143) | 3:44 | not yet formalized |
-| 8 | `v08_thompson_f.mp4` | Thompson's Group F Is Nonamenable (248) | 3:24 | formalized in Lean |
-| 9 | `v09_pi_exponent.mp4` | The Irrationality Exponent of π Is 2 (017) | 3:25 | formalized in Lean |
-| 10 | `v10_mahler.mp4` | The Mahler Conjecture (087) | 3:44 | formalized in Lean |
-| 11 | `v11_bsd.mp4` | The Full Birch–Swinnerton-Dyer Formula (002) | 4:42 | not yet formalized |
-| 12 | `v12_goldfeld.mp4` | Goldfeld's Conjecture (006) | 4:13 | not yet formalized |
-| 13 | `v13_hodge.mp4` | The Hodge Conjecture for CM Abelian Varieties (032) | 4:55 | not yet formalized |
-| 14 | `v14_artin.mp4` | Primitive Roots for Every Base (029) | 4:52 | not yet formalized |
-| 15 | `v15_catalan.mp4` | Catalan's Constant Is Irrational (005) | 4:27 | formalized in Lean |
-| 16 | `v16_gaussian_moat.mp4` | The Gaussian Moat Conjecture (028) | 4:25 | formalized in Lean |
-| 17 | `v17_unit_distances.mp4` | Distinct and Unit Distances (167) | 4:28 | formalized in Lean |
-| 18 | `v18_crossing_numbers.mp4` | Crossing Numbers of Complete Graphs (165) | 3:55 | formalized in Lean |
-| 19 | `v19_heilbronn.mp4` | The Heilbronn Triangle Problem (191) | 4:09 | not yet formalized |
-| 20 | `v20_barnette.mp4` | Barnette's Conjecture (180) | 3:52 | formalized in Lean |
-| 21 | `v21_kakeya.mp4` | Kakeya in Three and Four Dimensions (074) | 4:57 | not yet formalized |
-| 22 | `v22_falconer.mp4` | The Falconer Distance Conjecture (073) | 4:04 | formalized in Lean |
-| 23 | `v23_triangular_lattice.mp4` | Universal Optimality of the Triangular Lattice (090) | 4:58 | formalized in Lean |
-| 24 | `v24_hot_spots.mp4` | The Hot Spots Conjecture (369) | 4:01 | formalized in Lean |
-| 25 | `v25_littlewood.mp4` | Ultraflat Littlewood Polynomials (076) | 4:52 | not yet formalized |
-| 26 | `v26_logspace.mp4` | L = RL = BPL (103) | 5:01 | not yet formalized |
-| 27 | `v27_fft.mp4` | The Fourier Transform Below n log n (130) | 4:39 | not yet formalized |
-| 28 | `v28_integer_mult.mp4` | Integer Multiplication Below n log n (109) | 4:26 | not yet formalized |
-| 29 | `v29_coloring.mp4` | Hardness of Coloring Three-Colorable Graphs (106) | 4:18 | formalized in Lean |
-| 30 | `v30_subset_sum.mp4` | Subset Sum in O(2^0.49n) time (138) | 4:50 | not yet formalized |
-| 31 | `v31_periodic_tiling.mp4` | A Tile That Never Repeats (155) | 4:25 | formalized in Lean |
-| 32 | `v32_borsuk.mp4` | Borsuk's Conjecture Fails in Dimension 9 (156) | 4:25 | formalized in Lean |
-| 33 | `v33_billiards.mp4` | Billiards in Irrational Triangles (150) | 4:34 | not yet formalized |
-| 34 | `v34_standard_map.mp4` | Chaos With Positive Area (146) | 4:18 | formalized in Lean |
-| 35 | `v35_vlasov_maxwell.mp4` | Plasmas Stay Smooth (362) | 4:23 | formalized in Lean |
-| 36 | `v36_free_group_factors.mp4` | The Free Group Factors Are Isomorphic (287) | 5:05 | formalized in Lean |
-| 37 | `v37_cannon.mp4` | Cannon's Conjecture (246) | 4:28 | formalized in Lean |
-| 38 | `v38_kaplansky.mp4` | Kaplansky's Direct-Finiteness Conjecture Is False (197) | 5:00 | not yet formalized |
-| 39 | `v39_partition_principle.mp4` | The Partition Principle Does Not Imply Choice (244) | 4:01 | formalized in Lean |
-| 40 | `v40_bloch_law.mp4` | Bloch's T^(3/2) Law (271) | 4:06 | not yet formalized |
+| 1 | [`v01_quasi_rh.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v01_quasi_rh.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v01_quasi_rh.srt) | The Quasi-Riemann Hypothesis (003) | 5:01 | formalized in Lean |
+| 2 | [`v02_unique_games.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v02_unique_games.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v02_unique_games.srt) | The Unique Games Conjecture (102) | 4:52 | formalized in Lean |
+| 3 | [`v03_matrix_mult.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v03_matrix_mult.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v03_matrix_mult.srt) | Matrix multiplication: ω ≤ 9/4 (107) | 4:39 | formalized in Lean |
+| 4 | [`v04_plane_coloring.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v04_plane_coloring.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v04_plane_coloring.srt) | The Plane Is Not 5-Colorable (158) | 3:42 | formalized in Lean |
+| 5 | [`v05_erdos_ap.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v05_erdos_ap.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v05_erdos_ap.srt) | Erdős's Reciprocal-Sum Conjecture (159) | 3:58 | formalized in Lean |
+| 6 | [`v06_hilbert10_q.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v06_hilbert10_q.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v06_hilbert10_q.srt) | Hilbert's Tenth Problem over ℚ (004) | 4:07 | not yet formalized |
+| 7 | [`v07_hilbert16.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v07_hilbert16.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v07_hilbert16.srt) | Hilbert's 16th Problem: Limit Cycles (143) | 3:44 | not yet formalized |
+| 8 | [`v08_thompson_f.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v08_thompson_f.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v08_thompson_f.srt) | Thompson's Group F Is Nonamenable (248) | 3:24 | formalized in Lean |
+| 9 | [`v09_pi_exponent.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v09_pi_exponent.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v09_pi_exponent.srt) | The Irrationality Exponent of π Is 2 (017) | 3:25 | formalized in Lean |
+| 10 | [`v10_mahler.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v10_mahler.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v10_mahler.srt) | The Mahler Conjecture (087) | 3:44 | formalized in Lean |
+| 11 | [`v11_bsd.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v11_bsd.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v11_bsd.srt) | The Full Birch–Swinnerton-Dyer Formula (002) | 4:42 | not yet formalized |
+| 12 | [`v12_goldfeld.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v12_goldfeld.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v12_goldfeld.srt) | Goldfeld's Conjecture (006) | 4:13 | not yet formalized |
+| 13 | [`v13_hodge.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v13_hodge.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v13_hodge.srt) | The Hodge Conjecture for CM Abelian Varieties (032) | 4:55 | not yet formalized |
+| 14 | [`v14_artin.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v14_artin.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v14_artin.srt) | Primitive Roots for Every Base (029) | 4:52 | not yet formalized |
+| 15 | [`v15_catalan.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v15_catalan.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v15_catalan.srt) | Catalan's Constant Is Irrational (005) | 4:27 | formalized in Lean |
+| 16 | [`v16_gaussian_moat.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v16_gaussian_moat.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v16_gaussian_moat.srt) | The Gaussian Moat Conjecture (028) | 4:25 | formalized in Lean |
+| 17 | [`v17_unit_distances.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v17_unit_distances.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v17_unit_distances.srt) | Distinct and Unit Distances (167) | 4:28 | formalized in Lean |
+| 18 | [`v18_crossing_numbers.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v18_crossing_numbers.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v18_crossing_numbers.srt) | Crossing Numbers of Complete Graphs (165) | 3:55 | formalized in Lean |
+| 19 | [`v19_heilbronn.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v19_heilbronn.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v19_heilbronn.srt) | The Heilbronn Triangle Problem (191) | 4:09 | not yet formalized |
+| 20 | [`v20_barnette.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v20_barnette.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v20_barnette.srt) | Barnette's Conjecture (180) | 3:52 | formalized in Lean |
+| 21 | [`v21_kakeya.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v21_kakeya.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v21_kakeya.srt) | Kakeya in Three and Four Dimensions (074) | 4:57 | not yet formalized |
+| 22 | [`v22_falconer.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v22_falconer.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v22_falconer.srt) | The Falconer Distance Conjecture (073) | 4:04 | formalized in Lean |
+| 23 | [`v23_triangular_lattice.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v23_triangular_lattice.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v23_triangular_lattice.srt) | Universal Optimality of the Triangular Lattice (090) | 4:58 | formalized in Lean |
+| 24 | [`v24_hot_spots.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v24_hot_spots.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v24_hot_spots.srt) | The Hot Spots Conjecture (369) | 4:01 | formalized in Lean |
+| 25 | [`v25_littlewood.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v25_littlewood.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v25_littlewood.srt) | Ultraflat Littlewood Polynomials (076) | 4:52 | not yet formalized |
+| 26 | [`v26_logspace.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v26_logspace.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v26_logspace.srt) | L = RL = BPL (103) | 5:01 | not yet formalized |
+| 27 | [`v27_fft.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v27_fft.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v27_fft.srt) | The Fourier Transform Below n log n (130) | 4:39 | not yet formalized |
+| 28 | [`v28_integer_mult.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v28_integer_mult.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v28_integer_mult.srt) | Integer Multiplication Below n log n (109) | 4:26 | not yet formalized |
+| 29 | [`v29_coloring.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v29_coloring.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v29_coloring.srt) | Hardness of Coloring Three-Colorable Graphs (106) | 4:18 | formalized in Lean |
+| 30 | [`v30_subset_sum.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v30_subset_sum.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v30_subset_sum.srt) | Subset Sum in O(2^0.49n) time (138) | 4:50 | not yet formalized |
+| 31 | [`v31_periodic_tiling.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v31_periodic_tiling.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v31_periodic_tiling.srt) | A Tile That Never Repeats (155) | 4:25 | formalized in Lean |
+| 32 | [`v32_borsuk.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v32_borsuk.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v32_borsuk.srt) | Borsuk's Conjecture Fails in Dimension 9 (156) | 4:25 | formalized in Lean |
+| 33 | [`v33_billiards.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v33_billiards.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v33_billiards.srt) | Billiards in Irrational Triangles (150) | 4:34 | not yet formalized |
+| 34 | [`v34_standard_map.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v34_standard_map.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v34_standard_map.srt) | Chaos With Positive Area (146) | 4:18 | formalized in Lean |
+| 35 | [`v35_vlasov_maxwell.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v35_vlasov_maxwell.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v35_vlasov_maxwell.srt) | Plasmas Stay Smooth (362) | 4:23 | formalized in Lean |
+| 36 | [`v36_free_group_factors.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v36_free_group_factors.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v36_free_group_factors.srt) | The Free Group Factors Are Isomorphic (287) | 5:05 | formalized in Lean |
+| 37 | [`v37_cannon.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v37_cannon.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v37_cannon.srt) | Cannon's Conjecture (246) | 4:28 | formalized in Lean |
+| 38 | [`v38_kaplansky.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v38_kaplansky.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v38_kaplansky.srt) | Kaplansky's Direct-Finiteness Conjecture Is False (197) | 5:00 | not yet formalized |
+| 39 | [`v39_partition_principle.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v39_partition_principle.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v39_partition_principle.srt) | The Partition Principle Does Not Imply Choice (244) | 4:01 | formalized in Lean |
+| 40 | [`v40_bloch_law.mp4`](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v40_bloch_law.mp4) · [srt](https://github.com/dimenwarper/oai-math-vids/releases/download/v1.0/v40_bloch_law.srt) | Bloch's T^(3/2) Law (271) | 4:06 | not yet formalized |
 
 ## How they are made
 
