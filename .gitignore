@@ -1,0 +1,18 @@
+# local environment and toolchain
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+tinytex_install.log
+
+# source papers: cloned by setup.sh (130k+ files)
+repo/
+
+# generated (re-created by render.sh)
+cache/
+media/
+out/
+logs/
+locks/
+scratch/
+cost_log.txt
