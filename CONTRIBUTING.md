@@ -1,18 +1,56 @@
-# Making more videos
+# Contributing
 
-The catalogue has 372 result families and 40 have videos. This guide covers how the existing ones were made and how to add more, by hand or with parallel AI coding agents.
+The catalogue has 372 result families and 40 have videos. New videos are welcome as pull requests. So are fixes to existing ones, whether a wrong claim, a mispronounced name or a broken layout.
+
+## The workflow
+
+1. **Claim a result.** Open an issue titled `Claim: NNN <short title>` (NNN is the catalogue family number) so two people don't make the same video. Check the open issues and PRs first.
+2. **Set up.** Run `./setup.sh` once (see the README). It also clones openai/math into `repo/`, which holds the papers and Lean docs you'll need.
+3. **Make the video** (see below), using the next free number `vNN`. If two PRs collide, the maintainer renumbers on merge.
+4. **Open a PR** containing your code and data only (see "What goes in a PR").
+5. **Review.** A maintainer checks accuracy and the Lean card, renders the 1080p version, and publishes it in the next release, for example v1.1.
+
+By submitting a PR you agree to release your contribution into the public domain under [CC0 1.0](LICENSE), like the rest of this repo.
+
+## What goes in a PR
+
+| Include | Leave out |
+|---|---|
+| `videos/vNN_slug.py`, the scene | rendered video (`out/`, `media/`) |
+| `videos/data/make_vNN.py`, if you precompute data | narration cache (`cache/`) |
+| `videos/data/vNN.npz`, if under 5 MB (otherwise have the script regenerate it) | the `repo/` clone |
+
+All of the left-out items are already in `.gitignore`.
+
+**Show a preview.** Drag your rendered MP4 into the PR description; GitHub hosts video attachments in PRs. A low-quality draft is small enough, and the 1080p file works if it's under the size limit. Also paste a contact sheet or two (see "The loop").
+
+**Fixes to existing videos:** describe what was wrong and how you checked the fix, for example by citing the paper and page.
+
+### Review checklist
+
+Your PR is reviewed against this checklist, which also appears in the PR template:
+
+- [ ] Every name, date, number and attribution comes from the paper or is standard fact. Uncertain claims are cut, not hedged into the narration.
+- [ ] The result is presented as a claim from a manuscript produced by an OpenAI model, not yet peer reviewed.
+- [ ] The status card says "formalized" only if `repo/lean/docs/NNN.md` covers the main theorem. If it covers only part, the narration says which part.
+- [ ] There are no "first ever" or "open since" claims unless the paper makes them.
+- [ ] The proof section explains the paper's actual mechanism, not generic filler.
+- [ ] The contact sheets are clean: nothing overlaps, nothing is off-screen, and no lines wrap awkwardly.
+- [ ] It runs about 3.5–5 minutes and renders with `./render.sh videos/vNN_slug.py high` on a fresh checkout.
+- [ ] If AI tools wrote some or all of it, the PR says so, and you have personally reviewed the output.
 
 ## Picking a result
 
 The best candidates are both important and visual. Before starting one:
 
 - **Check the Lean status.** `repo/lean/docs/NNN.md` says exactly which statement is formalized, if any. Prefer formalized results, or be prepared to say clearly what isn't verified.
-- **Check that nobody has made one already.** Two results already have independent videos: 158 ([the-plane-needs-six](https://github.com/Th1nhNg0/the-plane-needs-six)) and 268 ([haldane-gap-explainer](https://github.com/yuxuanwang2009/haldane-gap-explainer)).
+- **Check that nobody has made one already.** Look at this repo's issues and PRs. Two results already have independent videos elsewhere: 158 ([the-plane-needs-six](https://github.com/Th1nhNg0/the-plane-needs-six)) and 268 ([haldane-gap-explainer](https://github.com/yuxuanwang2009/haldane-gap-explainer)).
 - **Find the family's papers.** Its entry in `repo/CONTENTS.md` lists them (search for `**NNN.`).
+- **Want a suggestion?** See "Wanted videos" at the end of this file.
 
 ## Anatomy of a video
 
-Each video is one file, `videos/vNN_slug.py`, containing `class Video(NarratedScene)`:
+Each video is one file, `videos/vNN_slug.py`, containing `class Video(NarratedScene)`. Read `videos/v08_thompson_f.py` or `videos/v04_plane_coloring.py` first; they're short, typical examples.
 
 ```python
 with self.say("We draw {dot}a dot, then {line}a line.") as s:
@@ -27,6 +65,8 @@ with self.say("We draw {dot}a dot, then {line}a line.") as s:
 - `[Name](/ipa/)` sets a pronunciation, for example `[Erdős](/ˈɛɹdəʃ/)`.
 - `common/style.py` holds the palette, `title_card()` and `status_card()`. Every video ends with a status card that states the claim and its Lean status.
 - Heavy numerics go in `videos/data/make_vNN.py`, which writes `videos/data/vNN.npz`. Prefer real computed data over decorative pictures.
+
+Changes to the shared pieces (`common/`, `render.sh`) affect all 40 videos, so propose them in a separate PR.
 
 The usual structure, about 550–750 narrated words (3.5–5 minutes):
 
@@ -48,11 +88,11 @@ The usual structure, about 550–750 narrated words (3.5–5 minutes):
 
 Read the contact sheets, fix overlaps, off-screen text and wrong visuals, and re-render until clean. `render.sh` runs at most `MAX_RENDERS` (default 3) renders at a time across the whole machine, and extra calls wait for a free slot. That makes it safe to call from many agents at once. On a 16 GB machine, keep the limit at 3.
 
-## Making videos with parallel agents
+## Using AI coding agents
 
-Videos v11–v40 were made by six Claude Code subagents working in parallel, five videos each, with a human-in-the-loop session reviewing everything they produced. The full brief each agent received is below. Paste it into your agent of choice and replace the last section with your assignments. Group related topics per agent so background reading is shared.
+AI help is welcome; the existing videos v11–v40 were made by six Claude Code subagents working in parallel, five videos each. A supervising session reviewed every one, and you are that reviewer for anything you submit.
 
-What it cost for 30 videos (Claude Opus 5.5, October 2026):
+What it cost for those 30 videos (Claude Opus 5.5, October 2026):
 
 | | |
 |---|---|
@@ -61,13 +101,15 @@ What it cost for 30 videos (Claude Opus 5.5, October 2026):
 | Rendering | local, about 1 minute per video at 1080p |
 | Narration | free (local text-to-speech) |
 
-The review step is not optional. In this batch:
+The review step is not optional. In that batch:
 
 - **Unfinished work:** one agent handed back three videos unrendered.
 - **Crashes:** two of those three crashed when they were finally rendered.
 - **Unchecked claims:** a few historical claims needed checking against the paper.
 
-For each finished batch, check every `formalized=True` card against `repo/lean/docs/NNN.md`, look at frames from every video, and spot-check the most surprising claims in the papers.
+Before opening a PR, check every `formalized=True` card against `repo/lean/docs/NNN.md`, look at frames from every video, and spot-check the most surprising claims in the papers.
+
+The brief each agent received is below. Paste it into your agent and replace the last section with your assignments. If you assign several videos to one agent, group related topics so background reading is shared.
 
 ### The agent brief
 
@@ -78,7 +120,7 @@ Make the videos assigned at the bottom, end-to-end, matching the existing ones i
 Work autonomously; don't ask questions.
 
 PROJECT (repo root):
-- README.md and docs/making-more.md: pipeline overview. Read them first.
+- README.md and CONTRIBUTING.md: pipeline overview. Read them first.
 - common/vo.py: NarratedScene + self.say(): Kokoro TTS (cached), {mark} bookmarks, [word](/ipa/) pronunciations.
 - common/style.py: palette (BLUE_3B, YELLOW_3B, TEAL_3B, RED_3B, GREEN_3B, ORANGE_3B, PURPLE_3B, GREY_3B),
   title_card(), status_card(), caption_box().
@@ -139,9 +181,9 @@ YOUR VIDEOS:
 - vNN_slug.py: family NNN, <title>. <Lean doc or not>. <Any prior-work caveat or visual idea.>
 ````
 
-## Ideas not yet done
+## Wanted videos
 
-These suit the format: visual, with a crisp statement, and mostly with Lean docs. "Lean doc" means `repo/lean/docs/NNN.md` exists; check its exact scope before writing the status card.
+These suit the format: visual, with a crisp statement, and mostly with Lean docs. Claim one with an issue before starting. "Lean doc" means `repo/lean/docs/NNN.md` exists; check its exact scope before writing the status card.
 
 | Family | Result | Lean doc |
 |---|---|---|

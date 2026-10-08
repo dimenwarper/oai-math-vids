@@ -7,7 +7,7 @@ Forty narrated, 3Blue1Brown-style explainer videos, each about a result in [gith
 > **Please read before sharing.**
 > - This project is unofficial and not affiliated with OpenAI or with 3Blue1Brown/Grant Sanderson. "3Blue1Brown-style" describes the visual style (it uses [Manim](https://www.manim.community/), the community fork of his animation engine).
 > - The videos explain **claims** from manuscripts that have not been peer reviewed. Each video ends with a card saying whether the main theorem is formalized in Lean, according to the catalogue's own Lean docs. Several are only partly formalized or not formalized at all, and the narration says exactly what is covered.
-> - The videos were written, animated and checked by AI agents (Claude), with each one's frames, Lean status and key claims reviewed in a supervising session. They have not been reviewed by mathematicians, and the narration is synthetic speech that hasn't been proofread by ear. Errors are possible. Please open an issue if you find one.
+> - The videos were written, animated and checked by AI agents (Claude), with each one's frames, Lean status and key claims reviewed in a supervising session. They have not been reviewed by mathematicians, and the narration is synthetic speech that hasn't been proofread by ear. Errors are possible. Please open an issue if you find one, or send a fix as a PR.
 
 ## The videos
 
@@ -71,7 +71,7 @@ render.sh              render a video (low = draft, high = 1080p30 into out/)
 sheet.sh               contact sheet of frames, for visual QA
 pdftxt.py              extract text from the catalogue PDFs
 setup.sh               one-time setup (Python env, TinyTeX, clone of openai/math)
-docs/making-more.md    how to add videos, including the brief used for parallel agents
+CONTRIBUTING.md        how to add a video via PR, including the brief used for parallel agents
 ```
 
 ## Quick start
@@ -85,14 +85,17 @@ git clone https://github.com/dimenwarper/oai-math-vids.git && cd oai-math-vids
 ./render.sh videos/v08_thompson_f.py high    # 1080p30 -> out/v08_thompson_f.mp4 (+ .srt)
 ```
 
-## Making more
+## Contributing
 
-To make more, see [docs/making-more.md](docs/making-more.md). It covers:
+New videos and fixes are welcome as pull requests. See [CONTRIBUTING.md](CONTRIBUTING.md), which covers:
 
-- choosing a result and checking its Lean scope;
+- claiming a result with an issue, and checking its Lean scope;
 - the anatomy of a scene;
 - the draft → contact sheet → fix → final loop;
-- the full brief used to have six AI agents make 30 videos in parallel (about 87k tokens per video), plus a list of good candidates not yet done.
+- what goes in a PR and the review checklist;
+- the full brief used to have six AI agents make 30 videos in parallel (about 87k tokens per video), plus a list of wanted videos.
+
+Merged videos are rendered by the maintainer and published in the next release.
 
 ## Credits and license
 
